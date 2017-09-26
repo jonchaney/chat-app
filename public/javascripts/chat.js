@@ -3,9 +3,8 @@ export default class Chat {
     this.socket = socket;
   }
 
-  sendMessage(room, msg) {
+  sendMessage(msg, room) {
     this.socket.emit('message', {text: msg, room});
   }
-
 
 }
